@@ -16,7 +16,7 @@ return(
  <p className="font-medium ">  build responsive web applications using React, TailwindCSS, and modern JavaScript. </p>
 </div>
 <div className=" imgs w-[50%] h-[90vh]  flex  items-center justify-center">
-<img src="../public/illustration.png" alt="illustration" className="w-[90%]" />
+<img src="../illustration.png" alt="illustration" className="w-[90%]" />
 </div>
     </div>
 )
