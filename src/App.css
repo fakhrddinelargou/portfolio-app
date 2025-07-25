@@ -1,0 +1,189 @@
+@import "tailwindcss";
+
+/* *{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+} */
+html{
+  font-size: 62.5%;
+}
+body{
+    font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.6rem;
+}
+.grid-background {
+  background: linear-gradient(to right, #fff3c9, #ffd8c9, #f7c2cc);
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* From Uiverse.io by gharsh11032000 */ 
+.animated-button {
+  position: relative;
+  display: inline-block;
+  border: none;
+  font-size: 16px;
+  background-color: inherit;
+  border-radius: 100px;
+  color: rgb(6, 6, 100);
+  /* box-shadow: 0 0 0 2px rgba(74, 4, 231, 0.089); */
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.animated-button span:last-child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: #2196F3;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.animated-button span:first-child {
+  position: relative;
+  z-index: 1;
+}
+
+.animated-button:hover {
+  box-shadow: 0 0 0 5px #2195f360;
+  color: #2195f360;
+}
+
+.animated-button:active {
+  scale: 0.95;
+}
+
+.animated-button:hover span:last-child {
+  width: 150px;
+  height: 150px;
+  opacity: 1;
+}
+
+#checked{
+  display: none;
+}
+.open,.close{
+display: none;
+
+}
+
+      .typing {
+          width: 26ch;               
+          animation: typing 4s steps(20) infinite, blink 0.75s step-end infinite;
+          white-space: nowrap;
+          overflow: hidden;
+          border-right: 2px solid black;
+
+          font-size: 1.5rem;
+        }
+
+        .link-container{
+          display: flex;
+          align-items: center; 
+          gap: 3rem;
+        }
+
+        @keyframes typing {
+          0%, 100% { width: 0; }
+          50% { width: 26ch; }
+        }
+
+        @keyframes blink {
+          50% { border-color: transparent; }
+        }
+
+
+
+        @media screen and (max-width : 45rem) {
+       
+
+          .navBar{
+      
+            height: 6rem;
+            width: 6rem;
+      
+            
+          }
+  
+          .link-container{
+            transition: .5s ease-out;
+            right: -100%;
+            width: 90%;
+            height: 100vh;
+            background-color: rgb(203, 203, 255);
+            
+            flex-direction: column;
+padding-top: 3rem ;
+padding-left: 2rem ;
+align-items: start;
+          justify-content: start;
+          gap: 2rem;
+            position: fixed;
+           
+            top: 0;
+          box-shadow: -.5rem 0 .5rem rgba(0,0,0,.1) ;
+          }
+          .links{
+            display: flex;
+            flex-direction: column;
+font-size: 1.9rem;
+           
+            
+          }
+          .links li{
+            margin-right: auto;
+          }
+.animated-button{
+  font-size: 2rem;
+}
+.close{
+display: block;
+
+}
+.open{
+display: block;
+padding: 0 4rem;
+}
+
+#checked:checked ~ .link-container{
+ right: 0;
+}
+.section{
+  flex-direction: column;
+align-items: center;
+padding: 2rem 0;
+}
+.content,.imgs{
+  width: 100%;
+  height: auto;
+  max-width: 90%;
+  align-items: center;
+  justify-content: center;
+
+}
+.content{
+  padding-left: 0;
+  text-align: center;
+  
+}
+.title , .title span{
+  font-size: 4rem;
+  
+  width: 100%;
+  text-align: center;
+}
+
+
+        }
